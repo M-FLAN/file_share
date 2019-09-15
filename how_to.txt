@@ -1,0 +1,8 @@
+install git
+create a new folder on your C:\ Drive
+in cmd:		cd to new folder
+in cmd:		git clone <include_http_link>
+copy the files youd like to move to the new folder
+in cmd:		git add .
+in cmd:		git commit . -m "mike init"
+in cmd:		git push
