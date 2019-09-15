@@ -3,6 +3,7 @@ install git
 in cmd:		git config --global http.url https://github.com/M-FLAN/file_share.git
 in cmd:		git config --global user.name Mike
 in cmd:		git config --global user.email mrtrac14@gmail.com
+in cmd:		git remote add http.url https://github.com/M-FLAN/file_share.git
 
 create a new folder on your C:\ Drive
 in cmd:		cd to new folder
@@ -10,4 +11,4 @@ in cmd:		git clone <include_http_link>
 copy the files youd like to move to the new folder
 in cmd:		git add .
 in cmd:		git commit . -m "mike init"
-in cmd:		git push
+in cmd:		git push origin master
