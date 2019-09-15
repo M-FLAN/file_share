@@ -1,14 +1,48 @@
 install git
+create user on github
+go to C:\
+make new folder called 'bc' = C:\bc\
+make new folder, sample name could bbe "git_repo" = C:\bc\git_repo
+open Command Prompt (hereafter referred to as 'cmd')
+
+in cmd:		cd C:\bc\git_repo
 
 in cmd:		git config --global http.url https://github.com/M-FLAN/file_share.git
 in cmd:		git config --global user.name Mike
 in cmd:		git config --global user.email mrtrac14@gmail.com
-in cmd:		git remote add http.url https://github.com/M-FLAN/file_share.git
+in cmd:		git remote add origin http.url https://github.com/M-FLAN/file_share.git
 
-create a new folder on your C:\ Drive
-in cmd:		cd to new folder
-in cmd:		git clone <include_http_link>
-copy the files youd like to move to the new folder
+
+in cmd:		remote -v
+
+	//after this, you should see something like this:
+	C:\bc\git_file_share>git remote -v
+	http.url        https://github.com/M-FLAN/file_share.git (fetch)
+	http.url        https://github.com/M-FLAN/file_share.git (push)
+	origin  https://github.com/M-FLAN/file_share (fetch)
+	origin  https://github.com/M-FLAN/file_share (push)
+
+
+in cmd:		git clone https://github.com/M-FLAN/file_share.git
+in cmd:		cd file_share
+
+//status check-in (optional)
+in cmd:		dir
+//you should see a response that looks like the following:
+ Volume in drive C has no label.
+ Volume Serial Number is 12E5-E125
+
+ Directory of C:\bc\mike_file_share\file_share
+
+09/15/2019  02:14 PM    <DIR>          .
+09/15/2019  02:14 PM    <DIR>          ..
+09/15/2019  02:15 PM             1,117 how_to.txt
+               1 File(s)          1,117 bytes
+               2 Dir(s)  xxx,xxx,xxx,xxx bytes free
+
+
+//FINAL STEP
+//copy the files youd like to move to the new folder
 in cmd:		git add .
 in cmd:		git commit . -m "mike init"
-in cmd:		git push origin master
+in cmd:		git push -u origin master
