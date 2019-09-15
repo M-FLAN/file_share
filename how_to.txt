@@ -1,4 +1,9 @@
 install git
+
+in cmd:		git config --global http.url https://github.com/M-FLAN/file_share.git
+in cmd:		git config --global user.name Mike
+in cmd:		git config --global user.email mrtrac14@gmail.com
+
 create a new folder on your C:\ Drive
 in cmd:		cd to new folder
 in cmd:		git clone <include_http_link>
